@@ -10,8 +10,13 @@
     }
   ],
   "require": {
-    "php": "^8.2",
+    "php": "^8.1.0",
     "saloonphp/saloon": "^3.0"
+  },
+  "require-dev": {
+    "pestphp/pest": "^2.0.0",
+    "pestphp/pest-plugin-arch": "2.x-dev",
+    "phpstan/phpstan": "^1.9.11"
   },
   "autoload": {
     "psr-4": {
@@ -25,8 +30,15 @@
   },
   "scripts": {
     "test:types": "phpstan analyse --ansi",
+    "test:unit": "pest --colors=always",
     "test": [
-      "@test:types"
+      "@test:types",
+      "@test:unit"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
   }
 }

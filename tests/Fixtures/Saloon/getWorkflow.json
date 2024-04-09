@@ -1,0 +1,38 @@
+{
+  "statusCode": 200,
+  "headers": {
+    "Authorization": "Bearer testing",
+    "Content-Type": "application\/json"
+  },
+  "data": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "workflow_version_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "workflow_inputs": {
+      "input_text": "some external text input",
+      "input_image": "https://somestatic.png"
+    },
+    "workflow_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "machine_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "origin": "manual",
+    "status": "not-started",
+    "ended_at": "string",
+    "created_at": "string",
+    "queued_at": "string",
+    "started_at": "string",
+    "gpu": "T4",
+    "machine_version": "string",
+    "machine_type": "classic",
+    "modal_function_call_id": "string",
+    "user_id": "string",
+    "org_id": "string",
+    "run_log": [
+      {
+        "logs": "some logs",
+        "timestamp": 1706631877.3831277
+      }
+    ],
+    "live_status": "string",
+    "progress": 0,
+    "is_realtime": true
+  }
+}
