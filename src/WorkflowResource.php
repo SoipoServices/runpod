@@ -12,6 +12,7 @@ use SoipoServices\ComfyDeploy\Requests\RunWorkflow;
 
 class WorkflowResource extends Resource
 {
+    protected ?string $webhookUrl = null;
 
     /**
      * @param string $run_id
@@ -41,6 +42,12 @@ class WorkflowResource extends Resource
     public function run(string $deployment_id, array $inputs): RunWorkflowData
     {
         $request = new RunWorkflow($deployment_id, $inputs);
+        if ($this->webhookUrl) {
+            $request->body()->merge([
+                'webhook' => $this->webhookUrl,
+            ]);
+        }
+
         $response = $this->connector->send($request);
 
         $data = $response->dtoOrFail();
@@ -49,5 +56,12 @@ class WorkflowResource extends Resource
         }
 
         return $data;
+    }
+
+    public function withWebhook(string $url): self
+    {
+        $this->webhookUrl = $url;
+
+        return $this;
     }
 }
