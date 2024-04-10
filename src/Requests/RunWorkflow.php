@@ -44,7 +44,7 @@ class RunWorkflow extends Request implements HasBody
     {
         return [
             'deployment_id' => $this->deployment_id,
-            'input' => $this->input,
+            'inputs' => $this->input,
         ];
     }
 

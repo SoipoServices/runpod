@@ -9,9 +9,8 @@ use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
 use SoipoServices\ComfyDeploy\Data\GetWorkflowData;
 
-class GetWorkflow extends Request implements HasBody
+class GetWorkflow extends Request
 {
-    use HasJsonBody;
 
     /**
      * @var Method
@@ -28,17 +27,7 @@ class GetWorkflow extends Request implements HasBody
 
     public function resolveEndpoint(): string
     {
-        return '/run';
-    }
-
-    /**
-     * @return array<string, array<string, float|int|string|null>|string>
-     */
-    protected function defaultBody(): array
-    {
-        return [
-            'run_id' => $this->run_id,
-        ];
+        return '/run?run_id=' . $this->run_id;
     }
 
     /**
