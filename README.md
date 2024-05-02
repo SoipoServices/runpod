@@ -106,7 +106,7 @@ All responses are returned as data objects. Detailed information can be found by
 Comfy Deploy allows you to configure a webhook to be called when your prediction is complete. To do so chain `withWebhook($url)` onto your api instance before calling the `create` method. For example:
 
 ```php
-$api->workflows()->withWebhook('https://www.example.com/webhook')->create($deployment_id, $input);
+$api->workflows()->withWebhook('https://www.example.com/webhook')->run($deployment_id, $input);
 $data->run_id; // 257b65b8-ac23-49be-8aca-53d2dd8556c6
 ```
 
