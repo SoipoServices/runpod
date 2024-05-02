@@ -9,10 +9,9 @@ This is a framework-agnostic PHP client for [Comfy Deploy.com](https://www.comfy
 - [Using with Laravel](https://github.com/soiposervices/comfydeploy#using-with-laravel)
 - [Response Data](https://github.com/soiposervices/comfydeploy#response-data)
 - [Webhooks](https://github.com/soiposervices/comfydeploy#webhooks)
-- [Prediction Methods](https://github.com/soiposervices/comfydeploy#available-prediction-methods)
+- [Workflow Methods](https://github.com/soiposervices/comfydeploy#available-prediction-methods)
     - [get](https://github.com/soiposervices/comfydeploy#get)
-    - [list](https://github.com/soiposervices/comfydeploy#list)
-    - [create](https://github.com/soiposervices/comfydeploy#create)
+    - [run](https://github.com/soiposervices/comfydeploy#run)
 
 ## 🚀 Quick start
 
