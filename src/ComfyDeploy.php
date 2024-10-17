@@ -4,7 +4,7 @@ namespace SoipoServices\ComfyDeploy;
 
 use Saloon\Http\Connector;
 
-final class ComfyDeploy extends Connector
+class ComfyDeploy extends Connector
 {
     public function __construct(
         public string $apiToken,

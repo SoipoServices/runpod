@@ -5,7 +5,7 @@ namespace SoipoServices\ComfyDeploy\Data;
 use Exception;
 use Saloon\Http\Response;
 
-final class GetWorkflowData
+class GetWorkflowData
 {
    /**
      * @param  array<string, string|int|float>  $workflow_inputs

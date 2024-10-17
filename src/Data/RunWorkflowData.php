@@ -5,7 +5,7 @@ namespace SoipoServices\ComfyDeploy\Data;
 use Exception;
 use Saloon\Http\Response;
 
-final class RunWorkflowData
+class RunWorkflowData
 {
     /**
      * @param string $run_id
