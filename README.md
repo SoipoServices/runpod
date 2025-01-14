@@ -1,5 +1,5 @@
 # RunPod PHP client
-This is a framework-agnostic PHP client for [RunPod.com](https://www.comfydeploy.com/) built on the amazing [Saloon v3](https://docs.saloon.dev/) 🤠 library. Use it to easily interact with machine learning models such as Stable Diffusion right from your PHP application.
+This is a framework-agnostic PHP client for [runpod.com](https://www.runpod.com/) built on the amazing [Saloon v3](https://docs.saloon.dev/) 🤠 library. Use it to easily interact with machine learning models such as Stable Diffusion right from your PHP application.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/soiposervices/comfydeploy.svg?style=flat-square)](https://packagist.org/packages/soiposervices/comfydeploy)
 [![GitHub Tests Action Status](https://github.com/SoipoServices/comfydeploy/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/SoipoServices/comfydeploy/actions/workflows/tests.yml)
