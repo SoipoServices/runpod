@@ -28,7 +28,7 @@ use SoipoServices\runpod\runpod;
 ...
 
 $api = new runpod(
-    apiToken: $_ENV['COMFY_DEPLOY_API_TOKEN'],
+    apiToken: $_ENV['RUNPOD_API_TOKEN'],
 );
 ```
 ###
@@ -50,8 +50,8 @@ $data->run_id; // 257b65b8-ac23-49be-8aca-53d2dd8556c6
 Begin by adding your credentials to your services config file.
 ```php
 // config/services.php
-'comfy_deploy' => [
-    'api_token' => env('COMFY_DEPLOY_API_TOKEN'),
+'runpod' => [
+    'api_token' => env('RUNPOD_API_TOKEN'),
 ],
 ```
 ###
@@ -63,7 +63,7 @@ public function register()
 {
     $this->app->bind(runpod::class, function () {
         return new runpod(
-            apiToken: config('services.comfy_deploy.api_token'),
+            apiToken: config('services.runpod.api_token'),
         );
     });
 }
