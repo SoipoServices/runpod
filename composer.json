@@ -1,6 +1,6 @@
 {
   "name": "soiposervices/comfydeploy",
-  "description": "A PHP client for the Comfy Deploy API",
+  "description": "A PHP client for the Runpod Deploy API",
   "keywords": ["comfy", "deploy", "php", "package"],
   "license": "MIT",
   "authors": [
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SoipoServices\\ComfyDeploy\\": "src/"
+      "SoipoServices\\RunPod\\": "src/"
     }
   },
   "autoload-dev": {
