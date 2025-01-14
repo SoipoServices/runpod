@@ -1,10 +1,10 @@
 <?php
 
-namespace SoipoServices\ComfyDeploy;
+namespace SoipoServices\RunPod;
 
 use Saloon\Http\Connector;
 
-class ComfyDeploy extends Connector
+class RunPod extends Connector
 {
     public function __construct(
         public string $apiToken,
@@ -16,7 +16,7 @@ class ComfyDeploy extends Connector
      */
     public function resolveBaseUrl(): string
     {
-        return 'https://www.comfydeploy.com/api';
+        return 'https://api.runpod.ai/v2/';
     }
 
     /**

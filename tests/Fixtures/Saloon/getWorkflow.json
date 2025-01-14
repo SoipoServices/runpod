@@ -4,35 +4,30 @@
     "Authorization": "Bearer testing",
     "Content-Type": "application\/json"
   },
-  "data": {
-    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "workflow_version_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "workflow_inputs": {
-      "input_text": "some external text input",
-      "input_image": "https://somestatic.png"
-    },
-    "workflow_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "machine_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "origin": "manual",
-    "status": "not-started",
-    "ended_at": "string",
-    "created_at": "string",
-    "queued_at": "string",
-    "started_at": "string",
-    "gpu": "T4",
-    "machine_version": "string",
-    "machine_type": "classic",
-    "modal_function_call_id": "string",
-    "user_id": "string",
-    "org_id": "string",
-    "run_log": [
-      {
-        "logs": "some logs",
-        "timestamp": 1706631877.3831277
+  "data": [
+    {
+      "json": {
+        "headers": {},
+        "params": {},
+        "query": {},
+        "body": {
+          "delayTime": 1465,
+          "executionTime": 547,
+          "id": "15826d2b-3bd1-47e3-baa9-1534c0ca562d-e1",
+          "input": {},
+          "output": {
+            "message": "base64:eyJzdGF0dXMiOiJzdWNjZXNzIn0=",
+            "status": "success"
+          },
+          "status": "COMPLETED",
+          "webhook": "https://fake.getreica.com/webhook"
+        },
+        "webhookUrl": "https://fake.getreica.com/webhook",
+        "executionMode": "test"
+      },
+      "pairedItem": {
+        "item": 0
       }
-    ],
-    "live_status": "string",
-    "progress": 0,
-    "is_realtime": true
-  }
+    }
+  ]
 }

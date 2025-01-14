@@ -2,8 +2,8 @@
 
 use Saloon\Exceptions\Request\FatalRequestException;
 use Saloon\Exceptions\Request\RequestException;
-use SoipoServices\ComfyDeploy\Data\RunWorkflowData;
-use SoipoServices\ComfyDeploy\Requests\RunWorkflow;
+use SoipoServices\RunPod\Data\RunWorkflowData;
+use SoipoServices\RunPod\Requests\RunWorkflow;
 
 test(/**
  * @throws FatalRequestException

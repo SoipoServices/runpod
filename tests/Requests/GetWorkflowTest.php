@@ -2,8 +2,8 @@
 
 use Saloon\Exceptions\Request\FatalRequestException;
 use Saloon\Exceptions\Request\RequestException;
-use SoipoServices\ComfyDeploy\Data\GetWorkflowData;
-use SoipoServices\ComfyDeploy\Requests\GetWorkflow;
+use SoipoServices\RunPod\Data\GetWorkflowData;
+use SoipoServices\RunPod\Requests\GetWorkflow;
 
 test(/**
  * @throws FatalRequestException
@@ -25,5 +25,14 @@ test(/**
     expect($response->ok())
         ->toBeTrue()
         ->and($data->id)
-        ->toBe('3fa85f64-5717-4562-b3fc-2c963f66afa6');
-});
+        ->toBe('15826d2b-3bd1-47e3-baa9-1534c0ca562d-e1')
+        ->and($data->delayTime)
+        ->toBe(1465)
+        ->and($data->executionTime)
+        ->toBe(547)
+        ->and($data->output["message"])
+        ->toBe('base64:eyJzdGF0dXMiOiJzdWNjZXNzIn0=')
+        ->and($data->output["status"])
+        ->toBe('success');
+
+})->group('run');

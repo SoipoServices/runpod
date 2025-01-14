@@ -1,14 +1,14 @@
 <?php
 
-namespace SoipoServices\ComfyDeploy;
+namespace SoipoServices\RunPod;
 
 use Exception;
 use Saloon\Exceptions\Request\FatalRequestException;
 use Saloon\Exceptions\Request\RequestException;
-use SoipoServices\ComfyDeploy\Data\GetWorkflowData;
-use SoipoServices\ComfyDeploy\Data\RunWorkflowData;
-use SoipoServices\ComfyDeploy\Requests\GetWorkflow;
-use SoipoServices\ComfyDeploy\Requests\RunWorkflow;
+use SoipoServices\RunPod\Data\GetWorkflowData;
+use SoipoServices\RunPod\Data\RunWorkflowData;
+use SoipoServices\RunPod\Requests\GetWorkflow;
+use SoipoServices\RunPod\Requests\RunWorkflow;
 
 class WorkflowResource extends Resource
 {

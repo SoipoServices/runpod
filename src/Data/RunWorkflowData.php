@@ -1,6 +1,6 @@
 <?php
 
-namespace SoipoServices\ComfyDeploy\Data;
+namespace SoipoServices\RunPod\Data;
 
 use Exception;
 use Saloon\Http\Response;
@@ -21,7 +21,7 @@ class RunWorkflowData
     public static function fromResponse(Response $response): self
     {
         $data = $response->json();
-        if (! is_array($data)) {
+        if (!is_array($data)) {
             throw new Exception('Invalid response');
         }
 

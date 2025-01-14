@@ -1,13 +1,13 @@
 <?php
 
-namespace SoipoServices\ComfyDeploy\Requests;
+namespace SoipoServices\RunPod\Requests;
 
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
-use SoipoServices\ComfyDeploy\Data\GetWorkflowData;
+use SoipoServices\RunPod\Data\GetWorkflowData;
 
 class GetWorkflow extends Request
 {
@@ -27,7 +27,7 @@ class GetWorkflow extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/run?run_id=' . $this->run_id;
+        return "{$this->run_id}/run";
     }
 
     /**

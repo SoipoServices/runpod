@@ -1,13 +1,13 @@
 <?php
 
-namespace SoipoServices\ComfyDeploy\Requests;
+namespace SoipoServices\RunPod\Requests;
 
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
-use SoipoServices\ComfyDeploy\Data\RunWorkflowData;
+use SoipoServices\RunPod\Data\RunWorkflowData;
 
 class RunWorkflow extends Request implements HasBody
 {

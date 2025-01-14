@@ -1,6 +1,6 @@
 <?php
 
-namespace SoipoServices\ComfyDeploy;
+namespace SoipoServices\RunPod;
 
 use Saloon\Http\Connector;
 

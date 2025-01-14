@@ -1,13 +1,13 @@
 <?php
 
-use SoipoServices\ComfyDeploy\ComfyDeploy;
 use Saloon\Http\Faking\MockClient;
 use Saloon\Http\Faking\MockResponse;
+use SoipoServices\RunPod\RunPod;
 
-function getConnector(): ComfyDeploy
+function getConnector(): RunPod
 {
     $apiToken = getenv('COMFY_DEPLOY_API_TOKEN');
-    return new ComfyDeploy(
+    return new RunPod(
         apiToken: $apiToken ?: '',
     );
 }
@@ -23,7 +23,7 @@ function getMockClient(string $class, string $fixture): MockClient
 
 /**
  */
-function getMockConnector(string $class, string $fixture): ComfyDeploy
+function getMockConnector(string $class, string $fixture): RunPod
 {
     $mockClient = getMockClient($class, $fixture);
     $connector = getConnector();
