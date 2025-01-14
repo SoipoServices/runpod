@@ -1,5 +1,5 @@
-# Comfy Deploy PHP client
-This is a framework-agnostic PHP client for [Comfy Deploy.com](https://www.comfydeploy.com/) built on the amazing [Saloon v3](https://docs.saloon.dev/) 🤠 library. Use it to easily interact with machine learning models such as Stable Diffusion right from your PHP application.
+# RunPod PHP client
+This is a framework-agnostic PHP client for [RunPod.com](https://www.comfydeploy.com/) built on the amazing [Saloon v3](https://docs.saloon.dev/) 🤠 library. Use it to easily interact with machine learning models such as Stable Diffusion right from your PHP application.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/soiposervices/comfydeploy.svg?style=flat-square)](https://packagist.org/packages/soiposervices/comfydeploy)
 [![GitHub Tests Action Status](https://github.com/SoipoServices/comfydeploy/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/SoipoServices/comfydeploy/actions/workflows/tests.yml)
@@ -33,7 +33,7 @@ $api = new ComfyDeploy(
 ```
 ###
 
-Then use it to invoke your model (or in comfy deploy terms "create a workflow").
+Then use it to invoke your model (or in RunPod terms "create a workflow").
 ```php
 $deployment_id = 'e4a14vs9-q40j-4ee2-1375-778b2je3221c';
 $input = [
@@ -103,7 +103,7 @@ All responses are returned as data objects. Detailed information can be found by
 * [RunWorkflowData](https://github.com/SoipoServices/comfydeploy/blob/main/src/Data/RunWorkflowData.php)
 
 ## Webhooks
-Comfy Deploy allows you to configure a webhook to be called when your prediction is complete. To do so chain `withWebhook($url)` onto your api instance before calling the `run` method. For example:
+RunPod allows you to configure a webhook to be called when your prediction is complete. To do so chain `withWebhook($url)` onto your api instance before calling the `run` method. For example:
 
 ```php
 $api->workflows()->withWebhook('https://www.example.com/webhook')->run($deployment_id, $input);
