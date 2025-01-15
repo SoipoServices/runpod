@@ -1,7 +1,7 @@
 {
-  "name": "soiposervices/comfydeploy",
+  "name": "soiposervices/runpod",
   "description": "A PHP client for the Runpod Deploy API",
-  "keywords": ["comfy", "deploy", "php", "package"],
+  "keywords": ["runpod", "deploy", "php", "package"],
   "license": "MIT",
   "authors": [
     {
