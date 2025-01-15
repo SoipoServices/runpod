@@ -34,7 +34,7 @@ class RunWorkflow extends Request implements HasBody
      */
     public function resolveEndpoint(): string
     {
-        return '/run';
+        return "{$this->deployment_id}/run";
     }
 
     /**
@@ -43,8 +43,7 @@ class RunWorkflow extends Request implements HasBody
     protected function defaultBody(): array
     {
         return [
-            'deployment_id' => $this->deployment_id,
-            'inputs' => $this->input,
+            $this->input,
         ];
     }
 
