@@ -20,7 +20,7 @@ test(/**
 
     $data = $connector->workflows()->run("8b3c8358-cc23-99ba-dn70-a8d3fff3eee0", ["test" => "test value 1", "test2" => "test value 2"]);
 
-    expect($data->run_id)
+    expect($data->id)
         ->toBe('a8073bca-2c04-40cf-8d2d-d0022e63dcf9');
 });
 

@@ -24,6 +24,6 @@ test(/**
 
     expect($response->ok())
         ->toBeTrue()
-        ->and($data->run_id)
+        ->and($data->id)
         ->toBe('a8073bca-2c04-40cf-8d2d-d0022e63dcf9');
 })->group('run');

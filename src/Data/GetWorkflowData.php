@@ -29,7 +29,6 @@ class GetWorkflowData
     public static function fromResponse(Response $response): self
     {
         $data = $response->json();
-        var_dump($data);
         if (!is_array($data)) {
             throw new Exception('Invalid response');
         }
