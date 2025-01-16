@@ -22,12 +22,13 @@ class RunWorkflow extends Request implements HasBody
     /**
      * @param string $deployment_id
      * @param array $input
+     * @param string|null $webhook
      */
     public function __construct(
         protected string $deployment_id,
-        protected array $input
-    ) {
-    }
+        protected array $input,
+        protected string|null $webhook = null
+    ) {}
 
     /**
      * @return string
@@ -42,7 +43,14 @@ class RunWorkflow extends Request implements HasBody
      */
     protected function defaultBody(): array
     {
-        return  $this->input;
+
+        $body = [
+            "input" => $this->input,
+        ];
+        if($this->webhook){
+            $body["webhook"] = $this->webhook;
+        }
+        return  $body;
     }
 
     /**
