@@ -28,12 +28,11 @@ class GetWorkflowData
      */
     public static function fromResponse(Response $response): self
     {
-        $responseData = $response->json();
-        if (!is_array($responseData)) {
+        $data = $response->json();
+        var_dump($data);
+        if (!is_array($data)) {
             throw new Exception('Invalid response');
         }
-        $data = $responseData[0]['json']['body'];
-
 
         return new GetWorkflowData(
             id: $data['id'],

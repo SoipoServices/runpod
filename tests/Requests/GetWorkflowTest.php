@@ -35,4 +35,4 @@ test(/**
         ->and($data->output["status"])
         ->toBe('success');
 
-})->group('run');
+});

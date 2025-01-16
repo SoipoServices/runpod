@@ -5,6 +5,7 @@
     "Content-Type": "application\/json"
   },
   "data": {
-    "run_id": "a8073bca-2c04-40cf-8d2d-d0022e63dcf9"
+    "id": "a8073bca-2c04-40cf-8d2d-d0022e63dcf9",
+    "status": "COMPLETED"
   }
 }

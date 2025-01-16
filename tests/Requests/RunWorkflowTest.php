@@ -26,4 +26,4 @@ test(/**
         ->toBeTrue()
         ->and($data->run_id)
         ->toBe('a8073bca-2c04-40cf-8d2d-d0022e63dcf9');
-});
+})->group('run');
