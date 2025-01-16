@@ -11,7 +11,8 @@ class RunWorkflowData
      * @param string $run_id
      */
     public function __construct(
-        public string $run_id
+        public string $run_id,
+        public string $status
     ) {
     }
 
@@ -26,7 +27,8 @@ class RunWorkflowData
         }
 
         return new RunWorkflowData(
-            run_id: $data['run_id']
+            run_id: $data['id'],
+            status: $data['status']
         );
     }
 }

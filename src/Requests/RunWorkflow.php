@@ -26,8 +26,7 @@ class RunWorkflow extends Request implements HasBody
      */
     public function __construct(
         protected string $deployment_id,
-        protected array $input,
-        protected string|null $webhook = null
+        protected array $input
     ) {}
 
     /**
@@ -47,9 +46,6 @@ class RunWorkflow extends Request implements HasBody
         $body = [
             "input" => $this->input,
         ];
-        if($this->webhook){
-            $body["webhook"] = $this->webhook;
-        }
         return  $body;
     }
 
