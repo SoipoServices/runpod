@@ -43,9 +43,7 @@ class RunWorkflow extends Request implements HasBody
     protected function defaultBody(): array
     {
 
-        $body = [
-            "input" => $this->input,
-        ];
+        $body =  $this->input;
         return  $body;
     }
 
